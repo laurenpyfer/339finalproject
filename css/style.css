@@ -1,0 +1,762 @@
+header ul li a:hover{
+    border: 2px solid #cf539b;
+    padding:5px 5px;
+}
+
+nav ul li {
+    text-align: left;
+    display: inline;
+ }
+  
+ header ul li a:visited{
+    color: #2d0d5e;
+  }
+  
+  /* navigation */
+   .naviBar{
+      animation-duration: 3s;
+      animation-name: bounce;
+   }
+ 
+   @keyframes bounce {
+      from {
+         background-color:#ffd4ed;
+         margin-left: 100%;
+         width: 300%;
+         
+      }
+      to {
+         background-color: #a12552;
+         margin-left: 0%;
+         width: 100%
+      }
+   }
+
+   .naviBar {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+   }
+  
+ .mybutton {
+    background: #ffd4ed;
+    border-radius:none;
+    border:5px solid #cf539b;
+    display:inline-block;
+    font-family: 'Lucina Console','Courier New', monospace;
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    font-weight:bold;
+    padding:10px 20px;
+    text-decoration:none;
+    text-shadow: 1px 1px #cf539b;
+    margin-bottom: 5px;
+ }
+ .mybutton:hover {
+    background:linear-gradient(to top, #ff52b7 5%, #ffd4ed 100%);
+    background-color:white;
+ }
+  
+ .mybutton:active {
+    position:relative;
+    top:1px;
+ }
+ 
+ /*skip to content when tab*/
+ a.skip{
+    background: white;
+    left: 10;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+ }
+ 
+ a.skip:focus{
+    top:20px;
+    color: #a12552;
+    text-decoration-style: solid;
+ }
+  
+ .skip:visited{
+    color: #2d0d5e;
+ }
+
+ .naviBar .active {
+    background-color: #ff52b7;
+    font-size: 9px;
+    border: 4px solid #a12552;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+ }
+ 
+ /*header*/
+ body header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  
+ header img {
+    border: 2px solid white;
+    height: 200px;
+    margin-bottom: 10px;   
+ }
+  
+ header{
+    background-color: #a12552;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+ }
+ 
+ body{
+   color: #000000;
+   margin: 20px;
+   font-family: 'Lucina Console','Courier New', monospace;
+   background-color: rgb(255, 228, 251);
+   width: 100%;
+   margin: 0px 0px 0px 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   border: 0px;
+}
+
+/*text*/
+h1 {
+   font-size: 50px;
+   font-weight: bold;
+   color: #570020;
+   font-family: 'Lucina Console','Courier New', monospace;
+   margin: auto;
+   text-align: center;
+   padding-top: 20px;
+}
+
+h2 {
+   font-size: 40px;
+   color: #61102e;
+   text-align: center;
+}
+
+h3 {
+   text-align: center;
+   font-size: 20px;
+   font-style: italic;
+   color: black;
+   line-height: 40px;
+   margin: 0px 20px 0px 20px;
+}
+
+p {
+   font-size: 20px;
+   color: black;
+   line-height: 40px;
+   margin: 0px 10px 10px 0px;
+}
+ 
+
+footer {
+   text-align: center;
+   padding: 25px;
+   background:linear-gradient(to top, #ffd4ed 5%, #c2bcff 100%);
+   background-color: #c2bcff;
+}
+ 
+footer p{
+   color: #48002a;
+}
+ 
+.linkedin {
+       text-decoration: none;
+   }
+.linkedin:hover {
+      background-color: rgb(233, 158, 233);
+   }
+ 
+.umichmail {
+   text-decoration: none;
+}
+.umichmail:hover {
+   background-color: rgb(233, 158, 233);
+}
+
+/*home main page*/
+div.headshot {
+   align-items: center;
+   max-width: 900px;
+   max-height: 900px;
+   margin:auto;
+   text-align: center;
+}
+ 
+.headshot img {
+   height: 300px;
+   width: 280px;
+   margin-left: auto;
+   margin-right: auto;
+   align-items: center;
+   align-content: center;
+   display: inline-block;
+   border:4px solid #a12552;
+ 
+}
+
+.statement {
+   font-size: 15px;
+   padding: 10px 10px 10px 10px;
+   margin: 20px;
+   justify-content: center;
+   overflow: scroll;
+   border: solid 5px #cf539b;
+}
+
+.aboutme {
+   color: #a12552;
+   border: 5px solid #961b63;
+   background-color: white;
+   font-size: 15px;
+   padding: 10px 10px 10px 10px;
+   margin: 20px;
+   justify-content: center;
+   overflow: scroll;
+}
+
+/*need to fix this*/
+main ul li a {
+   color: #a12552;
+   text-decoration: none;
+}
+main a:hover {
+   text-decoration: underline dotted #808080;
+   background-color: #FFFFF0;
+}
+main a:visited{
+   color: blue;
+}
+footer p a img{
+   height: 50px;
+   max-width: 50px;
+}
+/*need to fix this*/
+
+/*art page*/
+
+.artworkpics{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   min-width: 300px;
+   min-height: 300px;
+  
+}
+ 
+.artworkpics > img{
+   border: 5px solid #a12552;
+   height: 400px;
+   width: 400px;
+   margin: 7px;
+ }
+
+ /*inspiration page*/
+
+ .grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 200px 1fr 1fr 1fr 1fr 1fr 20px;
+   gap: 15px 15px;
+   margin-left: auto;
+   margin-right: auto;
+   align-content: center;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+   #h2 {
+      color: #a12552;
+      border: 5px solid #961b63;
+      background-color: white;
+      font-size: 25px;
+      padding: 10px 10px 10px 10px;
+      margin: 20px;
+      grid-column: 1 / span 2;
+      grid-row: 1 / 1;
+      justify-content: center;
+      overflow: scroll;
+   }
+
+   .clouds{
+      display: flex;
+      grid-row: 2 / 2;
+      grid-column: 1 / 1;
+      justify-content: center;
+      align-items: center;
+   }
+   .clouds img {
+      height: 300px;
+      object-fit: contain;
+      }
+
+  .conservatory {
+   display: flex;
+   grid-row: 2 / 2;
+   grid-column: 2 / 2;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .conservatory img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .friends {
+   display: flex;
+   grid-row: 3 / 3;
+   grid-column: 1 / 1;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .friends img{
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .headlands {
+   display: flex;
+   grid-row: 3 / 3;
+   grid-column: 2 / 2;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .headlands img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .muir {
+   display: flex;
+   grid-row: 4/ 4;
+   grid-column: 1 / 1;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .muir img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .surphoto {
+   display: flex;
+   grid-row: 4 / 4;
+   grid-column: 2 / 2;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .surphoto img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .tam {
+   display: flex;
+   grid-row: 5 / 5;
+   grid-column: 1 / 1;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .tam img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .tamvalley {
+   display: flex;
+   grid-row: 5 / 5;
+   grid-column: 2 / 2;
+   justify-content: center;
+   align-items: center;
+   }
+   
+   .tamvalley img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .spooky {
+   display: flex;
+   grid-row: 6 / 6;
+   grid-column: 1 / 1;
+   justify-content: center;
+   align-items: center;
+   }
+      
+   .spooky img {
+   height: 300px;
+   object-fit: contain;
+   }
+
+   .tree {
+      display: flex;
+      grid-row: 6 / 6;
+      grid-column: 2 / 2;
+      justify-content: center;
+      align-items: center;
+      }
+         
+      .tree img {
+      height: 300px;
+      object-fit: contain;
+      }
+
+   footer {
+   grid-column: 1 / span 3;
+   }
+
+/*aboutme page*/
+/*need to fix*/
+
+.aboutmegrid{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 300px 1fr 300px;
+   gap: 15px 15px;
+   margin-left: auto;
+   margin-right: auto;
+   align-content: center;
+ }
+
+   .lifestory {
+      color: #a12552;
+      border: 5px solid #961b63;
+      background-color: white;
+      font-size: 15px;
+      padding: 10px 10px 10px 10px;
+      margin: 20px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 1;
+      justify-content: center;
+      overflow: scroll;
+
+   }
+   .familyphoto{
+      display: flex;
+      grid-row: 2 / 2;
+      grid-column: 1 / 2;
+      justify-content: center;
+      align-items: center;
+   }
+   .familyphoto img {
+      height: 300px;
+      object-fit: contain;
+      }
+   
+   .container {
+      border: 5px solid #961b63;
+      background-color: white;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px 10px 10px 10px;
+      margin: 20px;
+      grid-row: 3/ 3;
+      grid-column: 1 / 3;
+      justify-content: center;
+      align-items: center;
+      overflow: scroll;
+   }
+
+   input {
+      width: 50%;
+      margin: 10px;
+      align-content: center;
+   }
+
+   input[type=text] {
+      border: none;
+      border-bottom: 2px solid #961b63;
+   }
+
+   input[type=email] {
+      border: none;
+      border-bottom: 2px solid #961b63;
+   }
+
+   input[type=number] {
+      border: none;
+      border-bottom: 2px solid #961b63;
+   }
+
+   input[type=button], input[type=submit], input[type=reset] {
+      background-color: rgb(233, 158, 233);
+      border: none;
+      color: #2d0d5e;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+   
+   footer {
+      grid-column: 1 / span 3;
+      }
+
+/*tablet view*/
+
+@media screen and (min-width: 768px) {
+   body header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+      /* parallax */
+   .parallax {
+      background-image: url("../images/drawing.jpeg");
+      min-height: 200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+  
+/*home*/
+
+  .homegrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 400px 1fr;
+}
+   .headshot{
+      padding: 40px 10px 10px 10px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+}
+   .aboutme {  
+      grid-column: 1 / 3;
+      grid-row: 2 / 2;
+   }
+   .statement {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+}  
+
+  }
+
+/*portfolio page*/
+
+.naviBar {
+   flex-direction: column;
+   width: 300px; 
+}
+
+/* inspo page*/
+.grid {
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+}
+
+#h2 {
+   grid-row: 1 / 1;
+   grid-column: 1 / 4;
+}
+
+.clouds {
+   grid-row: 2 / 2;
+   grid-column: 1 / 1;
+}
+
+.clouds img {
+   height: 100%;
+}
+
+.conserve {
+   grid-row: 2 / 2;
+   grid-column: 2 / 2;
+}
+
+.conserve img {
+   height: 100%;
+}
+
+.friends {
+   grid-row: 2 / 2;
+   grid-column: 3 / 3;
+}
+
+.friends img{
+   height: 100%;
+}
+
+.headlands {
+   grid-row: 3 / 3;
+   grid-column: 1 / 1;
+}
+
+.headlands img {
+   height: 100%;
+}
+
+.muir {
+   grid-row: 3 / 3;
+   grid-column: 2 / 2;
+}
+
+.muir img {
+   height: 100%;
+}
+
+.surphoto {
+   grid-row: 3 / 3;
+   grid-column: 3 / 3;
+}
+
+.surphoto img {
+   height: 100%;
+}
+
+.tam {
+   grid-row: 4 / 4;
+   grid-column: 1 / 1;
+}
+
+.tam img {
+   height: 100%;
+}
+
+.tamvalley {
+   grid-row: 4 / 4;
+   grid-column: 2 / 2;
+}
+
+.tamvalley img {
+   height: 100%;
+}
+
+.spooky {
+   grid-row: 4 / 4;
+   grid-column: 3 / 3;
+}
+
+.spooky img {
+   height: 100%;
+}
+
+.tree {
+   grid-row: 5 / 5;
+   grid-column: 2 / 2;
+}
+
+.tree img {
+   height: 100%;
+}
+
+
+
+/*desktop view*/
+@media screen and (min-width:962px) {
+   header{
+       width: 100%;
+   }
+   body {
+       width: 100%;
+       }
+   body header {
+       align-items: center;
+   }
+   .naviBar {
+      flex-direction: column;
+      width: 445px; }
+
+/*inspo page*/
+
+   .grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 1fr 1fr 1fr; 
+      margin-bottom: 20px;
+   }
+
+   #h2 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 5;
+   }
+   .clouds {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+   }
+
+   .conserve {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+   }
+
+   .friends {
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+   }
+
+   .headlands {
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+   }
+
+   .muir {
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+   }
+
+   .surphoto {
+      grid-row: 3 / 4;
+      grid-column: 2 / 3;
+   }
+
+   .spooky {
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+   }
+
+   .tam {
+      grid-row: 3 / 4;
+      grid-column: 4 / 5;
+   }
+
+   .tamvalley {
+      grid-row: 4/ 5;
+      grid-column: 2 / 3;
+   }
+
+   .tree {
+      grid-row: 4 / 5;
+      grid-column: 3 / 4;
+   }
+
+   /* turn off animation */
+  @media (prefers-reduced-motion:reduce){
+   .naviBar{
+     animation: none;
+   }
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
