@@ -1,5 +1,5 @@
+/*header*/
 header ul li a:hover{
-    border: 2px solid #cf539b;
     padding:5px 5px;
 }
 
@@ -60,18 +60,18 @@ nav ul li {
   
  .mybutton:active {
     position:relative;
-    top:1px;
+    top:1px;   
  }
  
  /*skip to content when tab*/
  a.skip{
     background: white;
     left: 10;
-    padding: 6px;
+    padding: 8px;
     position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
+    top: -50px;
+    -webkit-transition: top 2s ease-out;
+    transition: top 4s ease-out;
     z-index: 1;
  }
  
@@ -118,8 +118,7 @@ nav ul li {
  }
  
  body{
-   color: #000000;
-   margin: 20px;
+   color: #831e1e;
    font-family: 'Lucina Console','Courier New', monospace;
    background-color: #ffd4ed;
    width: 100%;
@@ -160,15 +159,17 @@ p {
    font-size: 20px;
    color: black;
    line-height: 40px;
-   margin: 0px 10px 10px 0px;
+   margin: 10px 10px 10px 10px;
 }
- 
+
+/*h4?*/
 
 footer {
    text-align: center;
    padding: 25px;
    background:linear-gradient(to top, #ffd4ed 5%, #c2bcff 100%);
    background-color: #4b0058;
+   /*gradient gives contrast error? I read online its an axe error so pass*/
 }
  
 footer p{
@@ -238,8 +239,8 @@ main ul li a {
    text-decoration: none;
 }
 main a:hover {
-   text-decoration: underline dotted #808080;
-   background-color: #FFFFF0;
+   text-decoration: underline dashed #422848;
+   background-color: #f6f0ff;
 }
 main a:visited{
    color: blue;
@@ -250,8 +251,7 @@ footer p a img{
 }
 /*need to fix this*/
 
-/*art page*/
-
+/*art page --> uses flex*/
 .artworkpics{
    display: flex;
    flex-direction: row;
@@ -269,7 +269,7 @@ footer p a img{
    margin: 7px;
  }
 
- /*inspiration page*/
+ /*inspiration page --> uses grid*/
 
  .grid{
    display: grid;
@@ -285,9 +285,9 @@ footer p a img{
 
    #h2 {
       color: #a12552;
-      border: 5px solid #961b63;
+      border: 2px solid #961b63;
       background-color: white;
-      font-size: 25px;
+      font-size: 23px;
       padding: 10px 10px 10px 10px;
       margin: 20px;
       grid-column: 1 / span 2;
@@ -297,146 +297,136 @@ footer p a img{
    }
 
    .clouds{
-      display: flex;
       grid-row: 2 / 2;
       grid-column: 1 / 1;
       justify-content: center;
       align-items: center;
+      
    }
    .clouds img {
-      height: 300px;
+      height: auto;
       object-fit: contain;
       }
 
   .conservatory {
-   display: flex;
-   grid-row: 2 / 2;
-   grid-column: 2 / 2;
-   justify-content: center;
-   align-items: center;
+      grid-row: 2 / 2;
+      grid-column: 2 / 2;
+      justify-content: center;
+      align-items: center;
    }
 
    .conservatory img {
-   height: 300px;
-   object-fit: contain;
+      height: auto;
+      object-fit: contain;
    }
 
    .friends {
-   display: flex;
    grid-row: 3 / 3;
-   grid-column: 1 / 1;
+   grid-column: 3 / 3;
    justify-content: center;
    align-items: center;
    }
 
    .friends img{
-   height: 300px;
+   height: auto;
    object-fit: contain;
    }
 
    .headlands {
-   display: flex;
-   grid-row: 3 / 3;
-   grid-column: 2 / 2;
-   justify-content: center;
-   align-items: center;
+      grid-row: 3 / 3;
+      grid-column: 4 / 4;
+      justify-content: center;
+      align-items: center;
    }
 
    .headlands img {
-   height: 300px;
-   object-fit: contain;
+      height: auto;
+      object-fit: contain;
    }
 
    .muir {
-   display: flex;
-   grid-row: 4/ 4;
-   grid-column: 1 / 1;
-   justify-content: center;
-   align-items: center;
+      grid-row: 4/ 4;
+      grid-column: 1 / 1;
+      justify-content: center;
+      align-items: center;
    }
 
    .muir img {
-   height: 300px;
-   object-fit: contain;
+      height: auto;
+      object-fit: contain;
    }
 
    .surphoto {
-   display: flex;
-   grid-row: 4 / 4;
-   grid-column: 2 / 2;
-   justify-content: center;
-   align-items: center;
+      grid-row: 4 / 4;
+      grid-column: 2 / 2;
+      justify-content: center;
+      align-items: center;
    }
 
    .surphoto img {
-   height: 300px;
-   object-fit: contain;
+      height: auto;
+      object-fit: contain;
    }
 
    .tam {
-   display: flex;
-   grid-row: 5 / 5;
-   grid-column: 1 / 1;
-   justify-content: center;
-   align-items: center;
+      grid-row: 4 / 4;
+      grid-column: 3 / 3;
+      justify-content: center;
+      align-items: center;
    }
 
    .tam img {
-   height: 300px;
-   object-fit: contain;
+      height: 300px;
+      object-fit: contain;
    }
 
    .tamvalley {
-   display: flex;
-   grid-row: 5 / 5;
-   grid-column: 2 / 2;
-   justify-content: center;
-   align-items: center;
+      grid-row: 4 / 4;
+      grid-column: 4 / 4;
+      justify-content: center;
+      align-items: center;
    }
    
    .tamvalley img {
-   height: 300px;
-   object-fit: contain;
+      height: auto;
+      object-fit: contain;
    }
 
    .spooky {
-   display: flex;
-   grid-row: 6 / 6;
-   grid-column: 1 / 1;
-   justify-content: center;
-   align-items: center;
+      grid-row: 5 / 5;
+      grid-column: 1 / 1;
+      justify-content: center;
+      align-items: center;
    }
       
    .spooky img {
-   height: 300px;
-   object-fit: contain;
+      height: auto;
+      object-fit: contain;
    }
 
    .tree {
-      display: flex;
-      grid-row: 6 / 6;
+      grid-row: 5 / 5;
       grid-column: 2 / 2;
       justify-content: center;
       align-items: center;
       }
          
-      .tree img {
-      height: 300px;
+   .tree img {
+      height: auto;
       object-fit: contain;
       }
 
    footer {
-   grid-column: 1 / span 3;
+   grid-column: 1 / span 4;
    }
 
 /*aboutme page*/
-/*need to fix*/
 
 .aboutmegrid{
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 300px 1fr 300px;
-   gap: 15px 15px;
+   gap: 15px 5px;
    margin-left: auto;
    margin-right: auto;
    align-content: center;
@@ -455,22 +445,23 @@ footer p a img{
       overflow: scroll;
 
    }
+
    .familyphoto{
       display: flex;
       grid-row: 2 / 2;
       grid-column: 1 / 2;
+      margin: 10px 10px 10px 10px;
       justify-content: center;
       align-items: center;
    }
    .familyphoto img {
-      height: 300px;
+      height: auto;
       object-fit: contain;
       }
    
    .container {
       border: 5px solid #961b63;
       background-color: white;
-      background-image: linear-gradient(300deg, lavender 0%, white 75%);
       text-align: center;
       font-size: 15px;
       padding: 10px 10px 10px 10px;
@@ -533,8 +524,7 @@ footer p a img{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-     }
-   
+     } 
   
 /*home*/
 
@@ -557,14 +547,19 @@ footer p a img{
       grid-row: 1 / 1;
 }  
 
-  }
-
-/*portfolio page*/
-
 .naviBar {
    flex-direction: column;
    width: 300px; 
 }
+
+/*portfolio page*/
+
+.artworkpics {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+   
 
 /* inspo page*/
 .grid {
@@ -668,7 +663,6 @@ footer p a img{
 }
 
 
-
 /*desktop view*/
 @media screen and (min-width:962px) {
    header{
@@ -681,8 +675,11 @@ footer p a img{
        align-items: center;
    }
    .naviBar {
-      flex-direction: column;
-      width: 445px; }
+      display: flex;
+      flex-direction: row;
+      width: 445px; 
+      justify-content: center;
+   }
 
 /*inspo page*/
 
@@ -746,6 +743,44 @@ footer p a img{
       grid-column: 3 / 4;
    }
 
+   .aboutmegrid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 1fr 1fr 1r;
+   }
+
+   .familyphoto {
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+      padding-top: 50px;
+   }
+
+   .lifestory {
+      grid-row: 1 / 1;
+      grid-column: 2 / 2;
+   }
+
+   /*about me*/
+
+   .aboutmegrid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .familyphoto {
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
+   }
+
+   .lifestory {
+      grid-row: 1 / 1;
+      grid-column: 2 / 2;
+   }
+
+   .container {
+      grid-row: 2 / 2;
+      grid-column: 1 / 3;
+   }
+
    /* turn off animation */
   @media (prefers-reduced-motion:reduce){
    .naviBar{
@@ -755,18 +790,6 @@ footer p a img{
    .parallax{
       display: none;
       }
-   
-
-
+   }
 }
-
 }
-
-
-
-
-
-
-
-
-
